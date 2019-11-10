@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/main.css">  
+    <title>cheatsheet</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="GitCheatSheet">
+            <a class="logo" href="https://github.com/">GitHub</a>
+            <h1>Git Cheat Sheet</h1>
+        </div>
+        <div class="Git-description">
+            <h3><p> Git is the open source distributed version control system that 
+                    facilitates GitHub activities on your laptop or desktop. 
+                    This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+                </p>
+            </h3>
+        </div>
+    </div>
+    <div class="container-1">
+        <div class="install">
+                <div class="upper">Install</div><br>
+                <a class="git" href="https://windows.github.com/"> 
+                    <b>GitHub for Windows</b><br>
+                    https://windows.github.com<br>
+                </a>
+                <a class="git" href="https://desktop.github.com/"> 
+                    <b>GitHub for Mac</b><br>
+                    https://mac.github.com<br>
+                </a>
+                <a class="git" href="https://desktop.github.com/"> 
+                    <b>GitHub for All Platforms</b><br>
+                    https://git-scum.com<br>
+                </a>
+                <div class="text">
+            Git distributions for Linux and POSIX systems are <br>
+            available on the official Git SCM web site.
+            </div>
+        </div>
+        <div class="create">
+                <div class="upper">
+                    Create repositories<br>
+                </div>
+                    <div class="text">
+                        When starting out with a new repository, you only need to do it<br>
+                        once; either locally, then push to GitHub, or by cloning an<br>
+                        existing repository.<br>
+                    </div>
+
+            <div class="code">
+                    <div class="terminal">$<b> git init</b></div>
+                    <div class="text"> Turn an existing directory into a git repository</div>
+            </div>
+            <div class="code">
+                    <div class="terminal">$ <b> git clone [url]</b></div>
+                    <div class="text">
+                    Clone (download) a repository that already exists on
+                    GitHub, including all of the files, branches, and commits
+            </div>
+        </div>
+        </div>               
+    </div>
+
+    <div class="container-2">
+            <div class="gitignore">
+                    <div class="upper">
+                            The .gitgnore file <br>
+                        </div>
+                    <div class="text">
+                            Sometimes it may be a good idea to exclude files from being <br>
+                            tracked with Git. This is typically done in a special file named.<br>
+                            gitignore . You can find helpful templates for <br> 
+                            .gitignorefiles at <a href="github.com/github/gitignore"> github.com/github/gitignore.</a>
+            </div>
+            </div>
+            <div class="config">
+                            <div class="upper">
+                                Configure tooling <br>
+                            </div>
+                                <div class="text">
+                                        Configure user information for all local repositories <br>
+                                </div>
+            
+                        <div class="code">
+                                <div class="terminal">$<b>  git config --global user.name "[name]"</b></div>
+                                <div class="text"> Sets the name you want attached to your commit transactions</div>
+                        </div>
+                        <div class="code">
+                                <div class="terminal">$<b>  git config --global user.email "[email address]"</b></div>
+                                <div class="text"> Sets the email you want attached to your commit transactions</div>
+                        </div>
+                        <div class="code">
+                                <div class="terminal">$<b>  git config --global color.ui auto</b></div>
+                                <div class="text">
+                                        Enables helpful colorization of command line output
+                        </div>
+                    
+            </div>
+            
+            </div>
+
+    </div>
+    </div>
+    <div class="container-3">
+            <div class="Branches">
+                    <div class="upper">
+                            Branches<br>
+                        </div>
+                        <div class="text">
+                                Branches are an important part of working with Git. <br> 
+                                Any commits you make will be made on the branch you're <br>
+                                currently “checked out” to. Use  git status to see<br> which branch that is.
+                        </div>
+            
+                        <div class="code">
+                                <div class="terminal">$<b>  git branch [branch-name]</b></div>
+                                <div class="text">
+                                        Creates a new branch
+                        </div>
+                        </div>
+                        <div class="code">
+                                <div class="terminal">$<b>  git checkout [branch-name]</b></div>
+                                <div class="text">
+                                        Switches to the specified branch and updates the working directory
+                        </div>
+                        </div>
+                        <div class="code">
+                                <div class="terminal">$<b>  git merge [branch]</b></div>
+                                <div class="text">
+                                        Combines the specified branch’s history into the <br>
+                                        current branch. This is usually done in pull <br>
+                                        requests, but is an important Git operation.
+                        </div>
+                        </div>
+                        <div class="code">
+                                <div class="terminal">$<b> git branch -d [branch-name]</b></div>
+                                <div class="text">
+                                        Deletes the specified branch
+                                </div>
+                            </div>
+            </div>
+
+
+            <div class="Synchronize">
+                        <div class="upper">
+                            Synchronize changes<br>
+                        </div>
+                    <div class="text">
+                        Synchronize your local repository with the remote repository on GitHub.com        
+                    </div>
+                    <div class="code">
+                            <div class="terminal">$<b>  git fetch</b></div>
+                            <div class="text">
+                                    Downloads all history from the remote tracking branches
+                            </div>
+                    </div>
+                    <div class="code">
+                            <div class="terminal">$<b>  git merge</b></div>
+                            <div class="text">
+                                    Combines remote tracking branch into current local branch
+                    </div>
+                    </div>
+                    <div class="code">
+                            <div class="terminal">$<b>  git push</b></div>
+                            <div class="text">
+                                    Uploads all local branch commits to GitHub
+                    </div>
+                    </div>
+                    <div class="code">
+                            <div class="terminal">$<b> git pull</b></div>
+                            <div class="text">
+                                Updates your current local working branch with all new <br>
+                                commits from the corresponding remote branch on GitHub. git pull<br>
+                                is a combination of git fetch and git merge 
+                    </div>
+                    </div>
+            </div>
+    </div>
+    <div class="container-4">
+        <div class="changes">
+            <div class="upper">
+                Make Changes<br>
+            </div>
+            <div class="text">
+                    Browse and inspect the evolution of project files        
+            </div>
+            <div class="code">
+                    <div class="terminal">$<b>  git log</b></div>
+                    <div class="text">
+                            Lists version history for the current branch
+            </div>
+            </div>
+            <div class="code">
+                    <div class="terminal">$<b>  git log --follow [file]</b></div>
+                    <div class="text">
+                            Lists version history for a file, including renames
+            </div>
+            </div>
+            <div class="code">
+                    <div class="terminal">$<b>  git diff [first-branch]...[second-branch]</b></div>
+                    <div class="text">
+                            Shows content differences between two branches
+            </div>
+            </div>
+            <div class="code">
+                    <div class="terminal">$<b>  git show [commit]</b></div>
+                    <div class="text">
+                            Outputs metadata and content changes of the specified commit
+            </div>
+            </div>
+            <div class="code">
+                    <div class="terminal">$<b>  git add [file]</b></div>
+                    <div class="text">
+                            Snapshots the file in preparation for versioning
+            </div>
+            </div>
+            <div class="code">
+                    <div class="terminal">$<b>  git commit -m "[descriptive message]"</b></div>
+                    <div class="text">
+                            Records file snapshots permanently in version history
+            </div>
+            </div>
+        </div>
+        <div class="commits">
+            <div class="upper">
+                Redo commits<br>
+            </div>
+            <div class="text">
+                    Erase mistakes and craft replacement history       
+                </div>
+                <div class="code">
+                        <div class="terminal">$<b>  git reset [commit]</b></div>
+                        <div class="text">
+                                Undoes all commits after [commit], preserving changes locally
+                </div>
+                </div>
+                <div class="code">
+                        <div class="terminal">$<b>  git reset --hard [commit]</b></div>
+                        <div class="text">
+                                Discards all history and changes back to the specified commit
+                </div>
+                </div>
+                <div class="text">
+                        CAUTION! Changing history can have nasty side effects. <br>
+                        If you need to change commits that exist on GitHub <br>
+                        (the remote), proceed with caution. If you need help, <br>
+                        reach out at github.community or contact support. <br>     
+                </div>
+        </div>
+    </div>
+    <div class="container-5">
+            <img src="../covers/GitHubFlow.png">
+    </div>
+    <div class="container-6">
+            <div class="upper">
+                    Glossary
+            </div>
+            <div class="text">
+                    git: an open source, distributed version-control system <br>
+                    GitHub: a platform for hosting and collaborating on Git repositories <br>
+                    commit: a Git object, a snapshot of your entire repository compressed into a SHA <br>
+                    branch: a lightweight movable pointer to a commit <br>
+                    clone: a local version of a repository, including all commits and branches <br>
+                    remote: a common repository on GitHub that all team member use to exchange their changes <br>
+                    fork: a copy of a repository on GitHub owned by a different user <br>
+                    pull request: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more <br>
+                    HEAD: representing your current working directory, the HEAD pointer can be moved to different <br>
+                    branches, tags, or commits when using   git checkout <br>
+            </div>
+
+    </div>
+    <div class="footer">
+            <div class="text1">
+                Want to learn more about using GitHub and Git? <br>
+                Email the Training Team or visit our web site for learning <br>
+                event schedules and private class availability. <br>
+            </div>
+        <div class="services">
+            <a class="address" href="#">services@github.com</a><br>
+            <a class="address" href="https://services.github.com/">services.github.com</a>
+        </div>
+    </div>
+</body>
+</html>
