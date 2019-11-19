@@ -1,0 +1,121 @@
+body{
+    width:100%;
+    height: 100vhpx;
+    background: black;
+    display: flex;
+    justify-content: center;    
+}
+.section-inner{
+    background: linear-gradient(180deg, #3A3737 0%, rgba(196, 196, 196, 0) 100%);
+    width:90%;
+    height: 450px;
+}
+.t1{
+    font-style: 400;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    text-align: center;
+    padding-top:60px;
+    height: 90px;;
+
+}
+.input_tabs{
+    display:flex;
+    justify-content: space-around;
+}
+input{
+    font-family:'Roboto', sans-serif;
+    font-style: 100;
+    font-size: 36px;
+    line-height: 42px;
+    width: 300px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+        
+}
+input::placeholder{
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: black;
+
+}
+
+.btn{
+    padding-top:42px ;
+    display:flex;
+    justify-content: space-around;
+}
+.btn>a{
+    position: relative;
+    padding: 20px 20px;
+    font-family:'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+a span{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+a>.liquid{
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+     
+}
+a:hover .liquid{
+    top:-120px;
+}
+a>.liquid::before,
+a>.liquid::after{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    
+}
+a>.liquid::before
+{
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+a>.liquid::after
+{
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-75%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-75%) rotate(360deg);
+    }
+}
+.btn>.text{
+    font-style: 300;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    
+}
