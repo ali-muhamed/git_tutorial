@@ -1,30 +1,17 @@
-## Заранее извиняюсь за отсутствие нормальной подсветки синтаксиса в этом примере и далее.
-## Хоть "ini" и содержится в списке форматов поддерживаемых Хабром, код красивым не становится.
-## Если кто знает, как это починить - пожалуйста напишите в личку.
-#
-# Корневой файл EditorConfig
 root = true
 
-# Для всех файлов используем unix-совместимые переносы строк
+
 [*]
 end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
 insert_final_newline = true
-
-# отступы в 4 пробела
-[*.py,*.html,*.scss,*.html]
 indent_style = space
 indent_size = 2
 
-# Используем табы для отступов (Не указываем размер)
-[*.js]
+[*.txt,*.html]
 indent_style = tab
+indent_size = 4
 
-# Перезависываем настройку отступов для js файлов в папке lib
-[lib/**.js]
-indent_style = space
-indent_size = 2
-
-# Только для файлов package.json or .travis.yml
-[{package.json,.travis.yml,.scss}]
-indent_style = space
-indent_size = 2
+[*.{diff,md}]
+trim_trailing_whitespace = false

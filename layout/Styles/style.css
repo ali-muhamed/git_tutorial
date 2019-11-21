@@ -60,7 +60,7 @@
     height: 70px;
     background: none;
     border:3px solid #B1FBED;
-    
+
     opacity: 0.9;
     color: #ffffff;
     transition: 1s all ease;
@@ -72,14 +72,14 @@
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    transition: all 0.6s ease; 
+    transition: all 0.6s ease;
 }
 .section-header-wrapper__form-button>a>button:hover::before{
     width: 100%;
 
 }
 
-    
+
 /* === /header ===*/
 
 /* === promo ===*/
@@ -99,8 +99,8 @@
     height: 50vh;
     margin:0 auto;
     background-color: #ffffff;
-    
-    
+
+
 }
 .section-cover>.section-services>.title{
     font-family:'Roboto', sans-serif;
@@ -110,7 +110,7 @@
     line-height: 56px;
     padding-top: 75px;
     padding-left: 50px;
-   
+
 }
 .section-cover>.section-services>.text{
     font-style: normal;
@@ -159,7 +159,7 @@
     font-weight: 200;
     font-size: 48px;
     line-height: 56px;
-    
+
 }
 .content>.offer>.text{
     font-family:'Roboto', sans-serif;
@@ -215,7 +215,7 @@ background-color: #EAE7E7;
 .section-review>.section-inner1>.wrapper{
     display: flex;
     flex-direction: row;
-     
+
 }
 .section-review>.section-inner1{
     padding-left: 175px;
@@ -229,7 +229,7 @@ footer{
     width:100%;
     height: 40vh;
     background: linear-gradient(251.83deg, #232121 29.6%, rgba(35, 33, 33, 0) 101.66%);
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -246,6 +246,13 @@ footer>.logo{
     height: 100px;
     color:#60DCC6;
 
+}
+footer>.logo>.part2{
+  color:#60DCC6;
+}
+
+footer>.logo>.part2{
+  color:black;
 }
 footer>.address{
     font-style: 400;
